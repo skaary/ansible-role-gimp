@@ -1,0 +1,15 @@
+---
+- name: Verify
+  hosts: all
+
+  tasks:
+    - name: Collect package facts.
+      package_facts:
+        manager: "auto"
+
+    - name: Verify gimp is installed.
+      assert:
+        that:
+          - "'gimp' in ansible_facts.packages"
+        success_msg: "Gimp is installed."
+        fail_msg: "Gimp is not installed."
