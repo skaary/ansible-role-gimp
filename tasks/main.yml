@@ -3,10 +3,4 @@
   apt:
     name: "{{ [gimp_package_name] + gimp_required_packages }}"
     state: present
-# - name: ensure gimp configuration directories exist
-#   file:
-#     state: directory
-#     path: "{{ item }}"
-#     mode: 0755
-#   with_items:
-#     - "{{ gimp_config_dir }}"
+  become: true
