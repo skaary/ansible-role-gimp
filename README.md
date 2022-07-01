@@ -36,3 +36,7 @@ Alternatively, install the role via a _requirements.yml_ file, e.g. when install
   roles:
     - ansible-role-gimp
 ```
+
+## License
+
+MIT / BSD
