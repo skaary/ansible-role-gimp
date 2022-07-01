@@ -1,9 +1,0 @@
----
-gimp_package_name: gimp
-
-gimp_required_packages:
-  # newer ubuntu versions
-  - gimp-dcraw
-  # older ubuntu versions
-#  - gimp-ufraw
-# gimp_config_dir: "{{ lookup('env','HOME') }}/.gimp-2.8"
